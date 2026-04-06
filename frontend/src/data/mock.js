@@ -131,7 +131,7 @@ export const vehicles = [
     name: "Swift Dzire",
     type: "Sedan",
     capacity: "4+1",
-    image: "https://images.pexels.com/photos/34046319/pexels-photo-34046319.jpeg",
+    image: "https://images.unsplash.com/photo-1663852397535-18292e115327",
     features: ["AC", "Music System", "Comfortable Seats"],
     pricePerKm: "₹12"
   },
@@ -140,7 +140,7 @@ export const vehicles = [
     name: "Toyota Etios",
     type: "Sedan",
     capacity: "4+1",
-    image: "https://images.unsplash.com/photo-1624087013780-b0b4f5061784",
+    image: "https://images.unsplash.com/photo-1709620435392-c1ecacde8bd5",
     features: ["AC", "GPS", "Spacious Interior"],
     pricePerKm: "₹12"
   },
@@ -149,7 +149,7 @@ export const vehicles = [
     name: "Maruti Ertiga",
     type: "MUV",
     capacity: "6+1",
-    image: "https://images.unsplash.com/photo-1748215210950-536c6621629a",
+    image: "https://images.unsplash.com/photo-1642345830428-612be5186aba",
     features: ["AC", "7 Seater", "Luggage Space"],
     pricePerKm: "₹15"
   },
@@ -158,7 +158,7 @@ export const vehicles = [
     name: "Toyota Innova",
     type: "MUV",
     capacity: "7+1",
-    image: "https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d",
+    image: "https://images.unsplash.com/photo-1748215210950-536c6621629a",
     features: ["AC", "Premium Comfort", "Extra Luggage"],
     pricePerKm: "₹18"
   },
@@ -167,7 +167,7 @@ export const vehicles = [
     name: "Innova Crysta",
     type: "Premium MUV",
     capacity: "7+1",
-    image: "https://images.unsplash.com/photo-1633510657984-5f1ed399a1f1",
+    image: "https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d",
     features: ["Luxury AC", "Premium Interior", "Best Comfort"],
     pricePerKm: "₹22"
   }
