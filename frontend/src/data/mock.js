@@ -131,7 +131,7 @@ export const vehicles = [
     name: "Swift Dzire",
     type: "Sedan",
     capacity: "4+1",
-    image: "https://images.unsplash.com/photo-1663852397535-18292e115327",
+    image: "https://images.unsplash.com/photo-1663852397535-18292e115327?q=100&w=1920",
     features: ["AC", "Music System", "Comfortable Seats"],
     pricePerKm: "₹12"
   },
@@ -167,7 +167,7 @@ export const vehicles = [
     name: "Innova Crysta",
     type: "Premium MUV",
     capacity: "7+1",
-    image: "https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d",
+    image: "https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?q=100&w=1920",
     features: ["Luxury AC", "Premium Interior", "Best Comfort"],
     pricePerKm: "₹22"
   }

@@ -38,6 +38,7 @@ export const Fleet = () => {
                 <img 
                   src={vehicle.image} 
                   alt={vehicle.name}
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <Badge className="absolute top-4 right-4 bg-amber-500 hover:bg-amber-600 text-white">
