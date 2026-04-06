@@ -89,12 +89,12 @@ export const Hero = () => {
                     size="lg"
                     variant="outline"
                     onClick={() => {
-                      const element = document.getElementById('packages');
+                      const element = document.getElementById('destinations');
                       if (element) element.scrollIntoView({ behavior: 'smooth' });
                     }}
                     className="border-2 border-white text-white hover:bg-white hover:text-amber-600 px-8 py-6 text-lg backdrop-blur-sm transition-all duration-300"
                   >
-                    Explore Packages
+                    Explore Destinations
                   </Button>
                 </div>
               </div>

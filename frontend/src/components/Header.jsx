@@ -67,9 +67,6 @@ export const Header = () => {
             <button onClick={() => scrollToSection('destinations')} className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
               Destinations
             </button>
-            <button onClick={() => scrollToSection('packages')} className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
-              Tour Packages
-            </button>
             <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-amber-600 transition-colors font-medium">
               Services
             </button>
@@ -102,9 +99,6 @@ export const Header = () => {
               </button>
               <button onClick={() => scrollToSection('destinations')} className="text-left py-2 text-gray-700 hover:text-amber-600 transition-colors font-medium">
                 Destinations
-              </button>
-              <button onClick={() => scrollToSection('packages')} className="text-left py-2 text-gray-700 hover:text-amber-600 transition-colors font-medium">
-                Tour Packages
               </button>
               <button onClick={() => scrollToSection('services')} className="text-left py-2 text-gray-700 hover:text-amber-600 transition-colors font-medium">
                 Services

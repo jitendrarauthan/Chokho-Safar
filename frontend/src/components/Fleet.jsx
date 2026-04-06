@@ -47,17 +47,11 @@ export const Fleet = () => {
               </div>
 
               <CardContent className="p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-1">{vehicle.name}</h3>
-                    <div className="flex items-center gap-2 text-gray-600">
-                      <Users size={16} />
-                      <span className="text-sm font-medium">{vehicle.capacity} Seater</span>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-2xl font-bold text-amber-600">{vehicle.pricePerKm}</p>
-                    <p className="text-xs text-gray-500">per km</p>
+                <div className="mb-4">
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">{vehicle.name}</h3>
+                  <div className="flex items-center gap-2 text-gray-600">
+                    <Users size={16} />
+                    <span className="text-sm font-medium">{vehicle.capacity} Seater</span>
                   </div>
                 </div>
 
