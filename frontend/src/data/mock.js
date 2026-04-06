@@ -140,7 +140,7 @@ export const vehicles = [
     name: "Toyota Etios",
     type: "Sedan",
     capacity: "4+1",
-    image: "https://images.unsplash.com/photo-1709620435392-c1ecacde8bd5",
+    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/8ughs53o_etios.jpeg",
     features: ["AC", "GPS", "Spacious Interior"],
     pricePerKm: "₹12"
   },
@@ -149,7 +149,7 @@ export const vehicles = [
     name: "Maruti Ertiga",
     type: "MUV",
     capacity: "6+1",
-    image: "https://images.unsplash.com/photo-1642345830428-612be5186aba",
+    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/k9scfr22_ertiga.jpeg",
     features: ["AC", "7 Seater", "Luggage Space"],
     pricePerKm: "₹15"
   },
@@ -158,7 +158,7 @@ export const vehicles = [
     name: "Toyota Innova",
     type: "MUV",
     capacity: "7+1",
-    image: "https://images.unsplash.com/photo-1748215210950-536c6621629a",
+    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/c80qc7ig_Unknown.jpeg",
     features: ["AC", "Premium Comfort", "Extra Luggage"],
     pricePerKm: "₹18"
   },
