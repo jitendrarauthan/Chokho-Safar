@@ -167,7 +167,7 @@ export const vehicles = [
     name: "Innova Crysta",
     type: "Premium MUV",
     capacity: "7+1",
-    image: "https://images.unsplash.com/photo-1748215210950-536c6621629a?q=100&w=1920",
+    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/ouwu7cz5_crysta.png",
     features: ["Luxury AC", "Premium Interior", "Best Comfort"],
     pricePerKm: "₹22"
   },
