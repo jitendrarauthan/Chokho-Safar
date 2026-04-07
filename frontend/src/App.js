@@ -9,6 +9,7 @@ import { Gallery } from './components/Gallery';
 import { QuickContact } from './components/QuickContact';
 import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
+import { ContactInfo } from './components/ContactInfo';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Toaster } from './components/ui/sonner';
@@ -27,6 +28,7 @@ function App() {
       <QuickContact />
       <Testimonials />
       <FAQ />
+      <ContactInfo />
       <Contact />
       <Footer />
       <Toaster />

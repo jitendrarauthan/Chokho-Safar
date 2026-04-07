@@ -9,19 +9,24 @@ const heroImages = [
     subtitle: "Experience the Royal Heritage of Jaipur"
   },
   {
+    url: "https://images.unsplash.com/photo-1588584468549-802aa6d9c1c8",
+    title: "Desert Safari Adventure",
+    subtitle: "Explore Rajasthan's Golden Sands in Comfort"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1727686529006-6eaf285f7256",
+    title: "Visit the Taj Mahal",
+    subtitle: "Comfortable Ride to the Wonder of the World"
+  },
+  {
     url: "https://images.unsplash.com/photo-1715628256203-6f8a5c9adaac",
     title: "Romance of Udaipur",
-    subtitle: "The Venice of the East Awaits You"
+    subtitle: "Luxury Travel to the City of Lakes"
   },
   {
-    url: "https://images.unsplash.com/photo-1602858659965-ea6f743b7679",
-    title: "Golden Sands of Jaisalmer",
-    subtitle: "Adventure in the Thar Desert"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1769718460805-97642006a6bc",
-    title: "Eternal Love at Taj Mahal",
-    subtitle: "Witness the Wonder of the World"
+    url: "https://images.unsplash.com/photo-1596993164685-13bbee4b0530",
+    title: "Explore Jaipur's Heritage",
+    subtitle: "Hawa Mahal and Beyond with Chokho Safar"
   }
 ];
 
