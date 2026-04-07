@@ -4,39 +4,34 @@ import { Button } from './ui/button';
 
 const heroImages = [
   {
+    url: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/f6v2ap8o_c3.png",
+    title: "Chokho Safar Fleet at Hawa Mahal",
+    subtitle: "Your Trusted Travel Partner in Rajasthan"
+  },
+  {
     url: "https://images.unsplash.com/photo-1746106328500-8edb0a404d68",
-    title: "Discover the Pink City",
-    subtitle: "Experience the Royal Heritage of Jaipur"
+    title: "Discover Jaipur's Pink Beauty",
+    subtitle: "Experience Royal Heritage with Comfortable Travel"
   },
   {
-    url: "https://images.unsplash.com/photo-1770791366104-a795083e82ea",
-    title: "Explore Amber Fort",
-    subtitle: "Comfortable Taxi Services to Historic Sites"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1588584468549-802aa6d9c1c8",
-    title: "Desert Safari Adventure",
-    subtitle: "SUV Tours to Rajasthan's Golden Sands"
-  },
-  {
-    url: "https://images.pexels.com/photos/32569445/pexels-photo-32569445.jpeg",
-    title: "Group Tours with Tempo Traveller",
-    subtitle: "Perfect for Family and Group Journeys"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1727686529006-6eaf285f7256",
-    title: "Visit the Taj Mahal",
-    subtitle: "Comfortable Ride to the Wonder of the World"
+    url: "https://images.unsplash.com/photo-1737560878183-10791f96d957",
+    title: "Visit the Iconic Taj Mahal",
+    subtitle: "Comfortable Journey to the Wonder of the World"
   },
   {
     url: "https://images.unsplash.com/photo-1715628256203-6f8a5c9adaac",
-    title: "Romance of Udaipur",
+    title: "Romantic Udaipur Awaits",
     subtitle: "Luxury Travel to the City of Lakes"
   },
   {
-    url: "https://images.unsplash.com/photo-1772976455832-9d6b078ac401",
-    title: "Jaipur Heritage Tours",
-    subtitle: "Explore Pink City Palaces with Chokho Safar"
+    url: "https://images.unsplash.com/photo-1588584468549-802aa6d9c1c8",
+    title: "Desert Adventures",
+    subtitle: "SUV Tours to Rajasthan's Golden Dunes"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1602858659965-ea6f743b7679",
+    title: "Golden Sands of Jaisalmer",
+    subtitle: "Explore the Desert City in Comfort"
   }
 ];
 
