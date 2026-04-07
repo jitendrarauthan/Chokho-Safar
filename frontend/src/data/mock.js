@@ -131,7 +131,7 @@ export const vehicles = [
     name: "Swift Dzire",
     type: "Sedan",
     capacity: "4+1",
-    image: "https://images.unsplash.com/photo-1663852397535-18292e115327?q=100&w=1920",
+    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/lttgtfwy_dezire.jpg",
     features: ["AC", "Music System", "Comfortable Seats"],
     pricePerKm: "₹12"
   },
@@ -149,7 +149,7 @@ export const vehicles = [
     name: "Maruti Ertiga",
     type: "MUV",
     capacity: "6+1",
-    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/k9scfr22_ertiga.jpeg",
+    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/zfu6defj_ertiga.jpg",
     features: ["AC", "7 Seater", "Luggage Space"],
     pricePerKm: "₹15"
   },
