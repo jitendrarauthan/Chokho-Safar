@@ -9,6 +9,16 @@ const heroImages = [
     subtitle: "Your Trusted Travel Partner in Rajasthan"
   },
   {
+    url: "https://images.unsplash.com/photo-1770791366104-a795083e82ea",
+    title: "Amber Fort Tours",
+    subtitle: "Comfortable Vehicles to Jaipur's Iconic Fort"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1477587458883-47145ed94245",
+    title: "Explore Hawa Mahal",
+    subtitle: "Experience Pink City Heritage with Our Fleet"
+  },
+  {
     url: "https://images.unsplash.com/photo-1746106328500-8edb0a404d68",
     title: "Discover Jaipur's Pink Beauty",
     subtitle: "Experience Royal Heritage with Comfortable Travel"
@@ -25,7 +35,7 @@ const heroImages = [
   },
   {
     url: "https://images.unsplash.com/photo-1588584468549-802aa6d9c1c8",
-    title: "Desert Adventures",
+    title: "Desert Safari Adventures",
     subtitle: "SUV Tours to Rajasthan's Golden Dunes"
   },
   {
