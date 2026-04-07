@@ -140,7 +140,7 @@ export const vehicles = [
     name: "Toyota Etios",
     type: "Sedan",
     capacity: "4+1",
-    image: "https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?q=100&w=1920",
+    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/1ir1wkqm_etios.jpg",
     features: ["AC", "GPS", "Spacious Interior"],
     pricePerKm: "₹12"
   },
@@ -158,7 +158,7 @@ export const vehicles = [
     name: "Toyota Innova",
     type: "MUV",
     capacity: "7+1",
-    image: "https://images.unsplash.com/photo-1723134324876-b8e8ef1bcd33?q=100&w=1920",
+    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/nhhpkcq3_innova.png",
     features: ["AC", "Premium Comfort", "Extra Luggage"],
     pricePerKm: "₹18"
   },
@@ -176,7 +176,7 @@ export const vehicles = [
     name: "Tempo Traveller",
     type: "Luxury Van",
     capacity: "12+1",
-    image: "https://images.pexels.com/photos/30703624/pexels-photo-30703624.jpeg",
+    image: "https://customer-assets.emergentagent.com/job_explore-journeys-14/artifacts/4mutdbcj_tempo.png",
     features: ["Spacious Seating", "AC", "Perfect for Groups"],
     pricePerKm: "₹25"
   }
