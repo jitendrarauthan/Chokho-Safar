@@ -11,7 +11,7 @@ export const Logo = ({ className = "", size = "default" }) => {
 
   return (
     <div className={`flex items-center ${className}`}>
-      <div className={`${height} flex items-center`}>
+      <div className={`${height} flex items-center relative`}>
         <svg
           viewBox="0 0 280 80"
           fill="none"
@@ -76,8 +76,24 @@ export const Logo = ({ className = "", size = "default" }) => {
             T R A V E L S
           </text>
 
-          {/* Integrated Car Icon on the "O" */}
-          <g transform="translate(90, 15)">
+          {/* Animated Car Icon */}
+          <g className="animated-car">
+            <style>
+              {`
+                @keyframes driveCar {
+                  0% {
+                    transform: translate(0px, 48px);
+                  }
+                  100% {
+                    transform: translate(250px, 48px);
+                  }
+                }
+                .animated-car {
+                  animation: driveCar 4s linear infinite;
+                  transform-origin: center;
+                }
+              `}
+            </style>
             {/* Car body */}
             <path
               d="M 2 10 L 4 7 L 8 7 L 10 5 L 15 5 L 17 7 L 21 7 L 23 10 L 23 14 L 2 14 Z"
