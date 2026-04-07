@@ -9,9 +9,19 @@ const heroImages = [
     subtitle: "Experience the Royal Heritage of Jaipur"
   },
   {
+    url: "https://images.unsplash.com/photo-1770791366104-a795083e82ea",
+    title: "Explore Amber Fort",
+    subtitle: "Comfortable Taxi Services to Historic Sites"
+  },
+  {
     url: "https://images.unsplash.com/photo-1588584468549-802aa6d9c1c8",
     title: "Desert Safari Adventure",
-    subtitle: "Explore Rajasthan's Golden Sands in Comfort"
+    subtitle: "SUV Tours to Rajasthan's Golden Sands"
+  },
+  {
+    url: "https://images.pexels.com/photos/32569445/pexels-photo-32569445.jpeg",
+    title: "Group Tours with Tempo Traveller",
+    subtitle: "Perfect for Family and Group Journeys"
   },
   {
     url: "https://images.unsplash.com/photo-1727686529006-6eaf285f7256",
@@ -24,9 +34,9 @@ const heroImages = [
     subtitle: "Luxury Travel to the City of Lakes"
   },
   {
-    url: "https://images.unsplash.com/photo-1596993164685-13bbee4b0530",
-    title: "Explore Jaipur's Heritage",
-    subtitle: "Hawa Mahal and Beyond with Chokho Safar"
+    url: "https://images.unsplash.com/photo-1772976455832-9d6b078ac401",
+    title: "Jaipur Heritage Tours",
+    subtitle: "Explore Pink City Palaces with Chokho Safar"
   }
 ];
 
