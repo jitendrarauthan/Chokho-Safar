@@ -1,7 +1,6 @@
 import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { QRSection } from './components/QRSection';
 import { About } from './components/About';
 import { Destinations } from './components/Destinations';
 import { Services } from './components/Services';
@@ -20,7 +19,6 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <QRSection />
       <About />
       <Destinations />
       <Services />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, MapPin, Calendar, Users } from 'lucide-react';
+import { ChevronLeft, ChevronRight, MapPin, Calendar, Users, MessageCircle, Phone } from 'lucide-react';
 import { Button } from './ui/button';
 
 const heroImages = [
@@ -143,6 +143,39 @@ export const Hero = () => {
             }`}
           />
         ))}
+      </div>
+
+      {/* QR Codes Overlay - Fixed on Hero */}
+      <div className="absolute bottom-24 right-4 md:right-8 z-20 flex gap-3">
+        {/* WhatsApp QR */}
+        <div className="bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-2xl hover:scale-105 transition-transform duration-300 border-2 border-green-500">
+          <div className="flex flex-col items-center">
+            <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mb-2">
+              <MessageCircle className="text-white" size={20} />
+            </div>
+            <img 
+              src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fwa.me%2F919829692253%3Ftext%3DHi!%2520I%27m%2520interested%2520in%2520booking%2520a%2520tour%2520with%2520Chokho%2520Safar%2520Travels."
+              alt="WhatsApp QR" 
+              className="w-24 h-24 mb-2"
+            />
+            <p className="text-xs font-semibold text-gray-800">WhatsApp</p>
+          </div>
+        </div>
+
+        {/* Call QR */}
+        <div className="bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-2xl hover:scale-105 transition-transform duration-300 border-2 border-amber-500">
+          <div className="flex flex-col items-center">
+            <div className="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center mb-2">
+              <Phone className="text-white" size={20} />
+            </div>
+            <img 
+              src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=tel%3A%2B919829692253"
+              alt="Phone QR" 
+              className="w-24 h-24 mb-2"
+            />
+            <p className="text-xs font-semibold text-gray-800">Call Us</p>
+          </div>
+        </div>
       </div>
 
       {/* Quick Info Bar */}
