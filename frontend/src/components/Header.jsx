@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, Menu, X } from 'lucide-react';
 import { companyInfo } from '../data/mock';
 import { Button } from './ui/button';
+import { Logo } from './Logo';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,12 +53,7 @@ export const Header = () => {
       <nav className="px-4 py-3">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
-          <div className="flex flex-col">
-            <h1 className="text-xl md:text-2xl font-bold text-amber-700">
-              {companyInfo.name}
-            </h1>
-            <p className="text-xs text-gray-600 hidden sm:block">{companyInfo.tagline}</p>
-          </div>
+          <Logo />
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center gap-8">

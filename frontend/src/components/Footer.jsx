@@ -1,6 +1,7 @@
 import React from 'react';
 import { companyInfo } from '../data/mock';
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Logo } from './Logo';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -66,9 +67,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-amber-400">
-              {companyInfo.name}
-            </h3>
+            <Logo size="default" className="mb-4" />
             <p className="text-gray-400 mb-4 leading-relaxed">
               {companyInfo.tagline}
             </p>
