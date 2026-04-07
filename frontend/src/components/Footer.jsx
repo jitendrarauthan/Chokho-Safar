@@ -14,6 +14,53 @@ export const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-black text-white">
+      {/* Google Map Section */}
+      <div className="py-12 bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-white mb-2">Our Location</h3>
+            <p className="text-gray-300">Find us at our office in Jaipur</p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Map */}
+            <div className="md:col-span-2">
+              <div className="relative w-full h-96 rounded-xl overflow-hidden shadow-2xl">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.0979076442234!2d75.78874631504427!3d26.912434883139784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db42e7e5f10f7%3A0x8c1c8e9f8d8f8e9f!2sRaja%20Park%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1234567890123"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Chokho Safar Travels Location"
+                ></iframe>
+              </div>
+            </div>
+
+            {/* Location Info */}
+            <div className="bg-gradient-to-br from-amber-600 to-orange-500 rounded-xl p-8 flex flex-col justify-center">
+              <div className="flex items-start gap-4 mb-6">
+                <MapPin className="text-white flex-shrink-0 mt-1" size={28} />
+                <div>
+                  <h4 className="font-bold text-white text-xl mb-2">Office Address</h4>
+                  <p className="text-white/90 text-lg leading-relaxed">{companyInfo.address}</p>
+                </div>
+              </div>
+              <a 
+                href="https://maps.google.com/?q=135+Rajapark+Tilak+Nagar+Jaipur"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-amber-600 hover:bg-amber-50 font-bold py-3 px-6 rounded-lg text-center transition-colors"
+              >
+                Get Directions →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -59,11 +106,6 @@ export const Footer = () => {
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('packages')} className="text-gray-400 hover:text-amber-400 transition-colors">
-                  Tour Packages
-                </button>
-              </li>
-              <li>
                 <button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-amber-400 transition-colors">
                   Our Services
                 </button>
@@ -93,12 +135,6 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-amber-400">Contact Info</h4>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-amber-400 mt-1 flex-shrink-0" />
-                <span className="text-gray-400 text-sm">
-                  {companyInfo.address}
-                </span>
-              </li>
               <li className="flex items-start gap-3">
                 <Phone size={18} className="text-amber-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-400 text-sm">

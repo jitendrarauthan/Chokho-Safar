@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { QRSection } from './components/QRSection';
 import { About } from './components/About';
 import { Destinations } from './components/Destinations';
 import { Services } from './components/Services';
@@ -9,7 +10,6 @@ import { Gallery } from './components/Gallery';
 import { QuickContact } from './components/QuickContact';
 import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
-import { ContactInfo } from './components/ContactInfo';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { Toaster } from './components/ui/sonner';
@@ -20,6 +20,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
+      <QRSection />
       <About />
       <Destinations />
       <Services />
@@ -28,7 +29,6 @@ function App() {
       <QuickContact />
       <Testimonials />
       <FAQ />
-      <ContactInfo />
       <Contact />
       <Footer />
       <Toaster />
