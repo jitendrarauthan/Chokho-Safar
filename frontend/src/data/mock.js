@@ -170,6 +170,15 @@ export const vehicles = [
     image: "https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?q=100&w=1920",
     features: ["Luxury AC", "Premium Interior", "Best Comfort"],
     pricePerKm: "₹22"
+  },
+  {
+    id: 6,
+    name: "Tempo Traveller",
+    type: "Luxury Van",
+    capacity: "12+1",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957",
+    features: ["Spacious Seating", "AC", "Perfect for Groups"],
+    pricePerKm: "₹25"
   }
 ];
 
