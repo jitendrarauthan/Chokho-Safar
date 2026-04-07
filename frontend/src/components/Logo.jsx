@@ -2,66 +2,110 @@ import React from 'react';
 
 export const Logo = ({ className = "", size = "default" }) => {
   const sizes = {
-    small: { width: 40, height: 40, text: "text-lg" },
-    default: { width: 50, height: 50, text: "text-xl" },
-    large: { width: 60, height: 60, text: "text-2xl" }
+    small: { height: "h-10", text: "text-base" },
+    default: { height: "h-14", text: "text-2xl" },
+    large: { height: "h-16", text: "text-3xl" }
   };
 
-  const { width, height, text } = sizes[size];
+  const { height, text } = sizes[size];
 
   return (
-    <div className={`flex items-center gap-3 ${className}`}>
-      {/* Logo Icon */}
-      <div className="relative" style={{ width: `${width}px`, height: `${height}px` }}>
+    <div className={`flex items-center ${className}`}>
+      <div className={`${height} flex items-center`}>
         <svg
-          viewBox="0 0 100 100"
+          viewBox="0 0 280 80"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-full"
+          className="h-full w-auto"
         >
-          {/* Circular background */}
-          <circle cx="50" cy="50" r="48" fill="url(#gradient)" stroke="#D97706" strokeWidth="2"/>
-          
-          {/* Gradient definition */}
+          {/* Gradient Definitions */}
           <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style={{ stopColor: '#F59E0B', stopOpacity: 1 }} />
-              <stop offset="100%" style={{ stopColor: '#EA580C', stopOpacity: 1 }} />
+            <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style={{ stopColor: '#D97706', stopOpacity: 1 }} />
+              <stop offset="50%" style={{ stopColor: '#EA580C', stopOpacity: 1 }} />
+              <stop offset="100%" style={{ stopColor: '#D97706', stopOpacity: 1 }} />
+            </linearGradient>
+            <linearGradient id="accentGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style={{ stopColor: '#FBBF24', stopOpacity: 1 }} />
+              <stop offset="100%" style={{ stopColor: '#F59E0B', stopOpacity: 1 }} />
             </linearGradient>
           </defs>
+
+          {/* Decorative Road/Path under text */}
+          <path
+            d="M 10 65 Q 70 63 140 65 Q 210 67 270 65"
+            stroke="url(#accentGradient)"
+            strokeWidth="3"
+            fill="none"
+            strokeLinecap="round"
+          />
           
-          {/* Car icon */}
-          <g transform="translate(25, 35)">
+          {/* Road dashes */}
+          <line x1="40" y1="65" x2="50" y2="65" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+          <line x1="80" y1="65" x2="90" y2="65" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+          <line x1="120" y1="65" x2="130" y2="65" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+          <line x1="160" y1="65" x2="170" y2="65" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+          <line x1="200" y1="65" x2="210" y2="65" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+          <line x1="240" y1="65" x2="250" y2="65" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+
+          {/* Main Text "CHOKHO SAFAR" */}
+          <text
+            x="140"
+            y="35"
+            fontFamily="Arial, sans-serif"
+            fontSize="28"
+            fontWeight="bold"
+            fill="url(#textGradient)"
+            textAnchor="middle"
+            letterSpacing="2"
+          >
+            CHOKHO SAFAR
+          </text>
+
+          {/* Subtitle "TRAVELS" */}
+          <text
+            x="140"
+            y="55"
+            fontFamily="Arial, sans-serif"
+            fontSize="12"
+            fontWeight="600"
+            fill="#6B7280"
+            textAnchor="middle"
+            letterSpacing="6"
+          >
+            T R A V E L S
+          </text>
+
+          {/* Integrated Car Icon on the "O" */}
+          <g transform="translate(90, 15)">
+            {/* Car body */}
             <path
-              d="M5 15 L10 10 L15 10 L20 8 L30 8 L35 10 L40 10 L45 15 L45 25 L5 25 Z"
-              fill="white"
-              stroke="white"
-              strokeWidth="1.5"
+              d="M 2 10 L 4 7 L 8 7 L 10 5 L 15 5 L 17 7 L 21 7 L 23 10 L 23 14 L 2 14 Z"
+              fill="#EA580C"
+              stroke="#D97706"
+              strokeWidth="0.5"
             />
-            {/* Car windows */}
-            <rect x="12" y="12" width="10" height="6" fill="#D97706" rx="1"/>
-            <rect x="28" y="12" width="10" height="6" fill="#D97706" rx="1"/>
+            {/* Windows */}
+            <rect x="6" y="8" width="5" height="3" fill="#FEF3C7" rx="0.5"/>
+            <rect x="14" y="8" width="5" height="3" fill="#FEF3C7" rx="0.5"/>
             {/* Wheels */}
-            <circle cx="15" cy="27" r="3" fill="#1F2937" stroke="white" strokeWidth="1"/>
-            <circle cx="35" cy="27" r="3" fill="#1F2937" stroke="white" strokeWidth="1"/>
+            <circle cx="8" cy="15" r="2" fill="#1F2937" stroke="#D97706" strokeWidth="0.5"/>
+            <circle cx="17" cy="15" r="2" fill="#1F2937" stroke="#D97706" strokeWidth="0.5"/>
+            {/* Wheel details */}
+            <circle cx="8" cy="15" r="1" fill="#4B5563"/>
+            <circle cx="17" cy="15" r="1" fill="#4B5563"/>
           </g>
-          
-          {/* Rajasthan-style decorative dots */}
-          <circle cx="20" cy="20" r="2" fill="white" opacity="0.6"/>
-          <circle cx="80" cy="20" r="2" fill="white" opacity="0.6"/>
-          <circle cx="20" cy="80" r="2" fill="white" opacity="0.6"/>
-          <circle cx="80" cy="80" r="2" fill="white" opacity="0.6"/>
+
+          {/* Decorative elements - Rajasthan-inspired */}
+          <circle cx="15" cy="20" r="2" fill="#FBBF24" opacity="0.6"/>
+          <circle cx="265" cy="20" r="2" fill="#FBBF24" opacity="0.6"/>
+          <path d="M 18 22 L 20 24 L 22 22" stroke="#F59E0B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+          <path d="M 260 22 L 262 24 L 264 22" stroke="#F59E0B" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+
+          {/* Accent dots around text */}
+          <circle cx="25" cy="35" r="1.5" fill="#F59E0B" opacity="0.7"/>
+          <circle cx="255" cy="35" r="1.5" fill="#F59E0B" opacity="0.7"/>
         </svg>
-      </div>
-      
-      {/* Logo Text */}
-      <div className="flex flex-col leading-tight">
-        <span className={`font-bold text-amber-700 ${text}`}>
-          Chokho Safar
-        </span>
-        <span className="text-xs text-gray-600 -mt-1">
-          Travels
-        </span>
       </div>
     </div>
   );
