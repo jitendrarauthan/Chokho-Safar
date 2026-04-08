@@ -176,9 +176,9 @@ export const Hero = () => {
           <p className="text-xs font-semibold text-center mt-1 text-white bg-black/50 px-2 py-1 rounded">Call Us</p>
         </a>
 
-        {/* Payment - Google Pay */}
+        {/* Pay Now - Google Pay */}
         <a
-          href="gpay://upi/pay?pa=7734915253@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
+          href="upi://pay?pa=7734915253@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
           className="group"
         >
           <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
@@ -188,7 +188,7 @@ export const Hero = () => {
               <path d="M14.5 19.5l3 3c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4L17.6 20H27c.6 0 1-.4 1-1s-.4-1-1-1h-9.4l1.3-1.3c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0l-3 3c-.4.4-.4 1 0 1.4z" fill="white"/>
             </svg>
           </div>
-          <p className="text-xs font-semibold text-center mt-1 text-white bg-black/50 px-2 py-1 rounded">Google Pay</p>
+          <p className="text-xs font-semibold text-center mt-1 text-white bg-black/50 px-2 py-1 rounded">Pay Now</p>
         </a>
       </div>
 
