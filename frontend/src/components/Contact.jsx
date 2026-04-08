@@ -49,7 +49,7 @@ export const Contact = () => {
 
   const handleWhatsApp = () => {
     const message = `Hi! I'm interested in booking a tour with Chokho Safar Travels.`;
-    const whatsappUrl = `https://wa.me/919829692253?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919829692122?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
