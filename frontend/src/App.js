@@ -7,6 +7,7 @@ import { Services } from './components/Services';
 import { Fleet } from './components/Fleet';
 import { Gallery } from './components/Gallery';
 import { QuickContact } from './components/QuickContact';
+import { PaymentNotice } from './components/PaymentNotice';
 import { Testimonials } from './components/Testimonials';
 import { FAQ } from './components/FAQ';
 import { Contact } from './components/Contact';
@@ -25,6 +26,7 @@ function App() {
       <Fleet />
       <Gallery />
       <QuickContact />
+      <PaymentNotice />
       <Testimonials />
       <FAQ />
       <Contact />
