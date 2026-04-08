@@ -8,7 +8,7 @@ import { Clock, MapPin, Star, BadgeIndianRupee } from 'lucide-react';
 export const TourPackages = () => {
   const handleBooking = (packageName) => {
     const message = `Hi! I'm interested in booking the ${packageName}. Please provide more details.`;
-    const whatsappUrl = `https://wa.me/919829692253?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919829692122?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

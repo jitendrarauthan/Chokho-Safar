@@ -7,7 +7,7 @@ import { Users, Phone } from 'lucide-react';
 
 export const Fleet = () => {
   const handleCall = () => {
-    window.location.href = 'tel:+919829692253';
+    window.location.href = 'tel:+919829692122';
   };
 
   return (

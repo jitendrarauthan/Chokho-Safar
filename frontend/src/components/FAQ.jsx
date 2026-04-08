@@ -53,13 +53,13 @@ export const FAQ = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
-              href="tel:+919829692253"
+              href="tel:+919829692122"
               className="inline-flex items-center px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-lg font-medium transition-colors"
             >
               Call Us Now
             </a>
             <a 
-              href="https://wa.me/919829692253"
+              href="https://wa.me/919829692122"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"

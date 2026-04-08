@@ -150,37 +150,44 @@ export const Hero = () => {
         ))}
       </div>
 
-      {/* QR Codes Overlay - Fixed on Hero */}
+      {/* Quick Action Icons - Fixed on Hero */}
       <div className="absolute bottom-24 right-4 md:right-8 z-20 flex gap-3">
-        {/* WhatsApp QR */}
-        <div className="bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-2xl hover:scale-105 transition-transform duration-300 border-2 border-green-500">
-          <div className="flex flex-col items-center">
-            <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mb-2">
-              <MessageCircle className="text-white" size={20} />
-            </div>
-            <img 
-              src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https%3A%2F%2Fwa.me%2F919829692253%3Ftext%3DHi!%2520I%27m%2520interested%2520in%2520booking%2520a%2520tour%2520with%2520Chokho%2520Safar%2520Travels."
-              alt="WhatsApp QR" 
-              className="w-24 h-24 mb-2"
-            />
-            <p className="text-xs font-semibold text-gray-800">WhatsApp</p>
+        {/* WhatsApp */}
+        <a
+          href="https://wa.me/919829692122?text=Hi!%20I'm%20interested%20in%20booking%20a%20tour%20with%20Chokho%20Safar%20Travels."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
+          <div className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
+            <MessageCircle className="text-white" size={28} />
           </div>
-        </div>
+          <p className="text-xs font-semibold text-center mt-1 text-white bg-black/50 px-2 py-1 rounded">WhatsApp</p>
+        </a>
 
-        {/* Call QR */}
-        <div className="bg-white/95 backdrop-blur-md rounded-xl p-4 shadow-2xl hover:scale-105 transition-transform duration-300 border-2 border-amber-500">
-          <div className="flex flex-col items-center">
-            <div className="w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center mb-2">
-              <Phone className="text-white" size={20} />
-            </div>
-            <img 
-              src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=tel%3A%2B919829692253"
-              alt="Phone QR" 
-              className="w-24 h-24 mb-2"
-            />
-            <p className="text-xs font-semibold text-gray-800">Call Us</p>
+        {/* Call */}
+        <a
+          href="tel:+919829692122"
+          className="group"
+        >
+          <div className="w-14 h-14 bg-amber-500 hover:bg-amber-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
+            <Phone className="text-white" size={28} />
           </div>
-        </div>
+          <p className="text-xs font-semibold text-center mt-1 text-white bg-black/50 px-2 py-1 rounded">Call Us</p>
+        </a>
+
+        {/* Payment */}
+        <a
+          href="upi://pay?pa=7734915253@paytm&pn=Chokho Safar Travels"
+          className="group"
+        >
+          <div className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
+            <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+            </svg>
+          </div>
+          <p className="text-xs font-semibold text-center mt-1 text-white bg-black/50 px-2 py-1 rounded">Pay Now</p>
+        </a>
       </div>
 
       {/* Quick Info Bar */}
