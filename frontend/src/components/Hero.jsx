@@ -176,17 +176,19 @@ export const Hero = () => {
           <p className="text-xs font-semibold text-center mt-1 text-white bg-black/50 px-2 py-1 rounded">Call Us</p>
         </a>
 
-        {/* Payment */}
+        {/* Payment - Google Pay */}
         <a
-          href="upi://pay?pa=7734915253@paytm&pn=Chokho Safar Travels"
+          href="gpay://upi/pay?pa=7734915253@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
           className="group"
         >
-          <div className="w-14 h-14 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
-            <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+          <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
+            <svg className="w-8 h-8 text-white" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="20" fill="#4285f4"/>
+              <path d="M33.5 28.5l-3-3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l1.3 1.3H21c-.6 0-1 .4-1 1s.4 1 1 1h9.4l-1.3 1.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3.3 0 .5-.1.7-.3l3-3c.4-.4.4-1 0-1.4z" fill="white"/>
+              <path d="M14.5 19.5l3 3c.4.4 1 .4 1.4 0 .4-.4.4-1 0-1.4L17.6 20H27c.6 0 1-.4 1-1s-.4-1-1-1h-9.4l1.3-1.3c.4-.4.4-1 0-1.4-.4-.4-1-.4-1.4 0l-3 3c-.4.4-.4 1 0 1.4z" fill="white"/>
             </svg>
           </div>
-          <p className="text-xs font-semibold text-center mt-1 text-white bg-black/50 px-2 py-1 rounded">Pay Now</p>
+          <p className="text-xs font-semibold text-center mt-1 text-white bg-black/50 px-2 py-1 rounded">Google Pay</p>
         </a>
       </div>
 
