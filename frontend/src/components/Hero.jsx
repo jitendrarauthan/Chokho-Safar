@@ -154,7 +154,7 @@ export const Hero = () => {
       <div className="absolute bottom-24 right-4 md:right-8 z-20 flex gap-3">
         {/* WhatsApp */}
         <a
-          href="https://wa.me/919829692122?text=Hi!%20I'm%20interested%20in%20booking%20a%20tour%20with%20Chokho%20Safar%20Travels."
+          href="https://wa.me/918114467319?text=Hi!%20I'm%20interested%20in%20booking%20a%20tour%20with%20Chokho%20Safar%20Travels."
           target="_blank"
           rel="noopener noreferrer"
           className="group"
@@ -167,7 +167,7 @@ export const Hero = () => {
 
         {/* Call */}
         <a
-          href="tel:+919829692122"
+          href="tel:+918114467319"
           className="group"
         >
           <div className="w-14 h-14 bg-amber-500 hover:bg-amber-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
@@ -178,7 +178,7 @@ export const Hero = () => {
 
         {/* Pay Now - Google Pay */}
         <a
-          href="upi://pay?pa=7734915253@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
+          href="upi://pay?pa=8114467319@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
           className="group"
         >
           <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">

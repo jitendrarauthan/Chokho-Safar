@@ -8,7 +8,7 @@ Create a professional website for Choukhosafar.com tour and travel based on prov
 - **Tagline**: Taking You to the Heart of Rajasthan
 - **Established**: 2014
 - **Office**: 135, Rajapark, Tilak Nagar, Jaipur
-- **Phone**: +91 9829692253, +91 7734915253
+- **Phone**: +91 8114467319
 - **Email**: info@choukhosafar.com
 - **Website**: www.choukhosafar.com
 

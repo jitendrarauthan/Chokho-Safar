@@ -6,7 +6,7 @@ export const companyInfo = {
   tagline: "Taking You to the Heart of Rajasthan",
   established: "2014",
   address: "135, Rajapark, Tilak Nagar, Jaipur",
-  phone: ["+91 9829692122", "+91 7734915253"],
+  phone: ["+91 8114467319", "+91 8114467319"],
   email: "chaukhosafar@gmail.com",
   website: "www.choukhosafar.com"
 };

@@ -40,7 +40,7 @@ export const PaymentNotice = () => {
                   
                   {/* Google Pay */}
                   <a
-                    href="upi://pay?pa=7734915253@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
+                    href="upi://pay?pa=8114467319@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
                     className="group"
                   >
                     <div className="flex flex-col items-center gap-2 bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-105">
@@ -55,7 +55,7 @@ export const PaymentNotice = () => {
 
                   {/* PhonePe */}
                   <a
-                    href="upi://pay?pa=7734915253@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
+                    href="upi://pay?pa=8114467319@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
                     className="group"
                   >
                     <div className="flex flex-col items-center gap-2 bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-105">
@@ -70,7 +70,7 @@ export const PaymentNotice = () => {
 
                   {/* Paytm */}
                   <a
-                    href="upi://pay?pa=7734915253@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
+                    href="upi://pay?pa=8114467319@paytm&pn=Chokho%20Safar%20Travels&cu=INR"
                     className="group"
                   >
                     <div className="flex flex-col items-center gap-2 bg-gradient-to-br from-cyan-50 to-cyan-100 hover:from-cyan-100 hover:to-cyan-200 px-6 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer hover:scale-105">
