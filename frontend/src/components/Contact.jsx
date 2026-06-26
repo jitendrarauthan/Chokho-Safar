@@ -28,8 +28,6 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Mock form submission
     console.log('Form submitted:', formData);
     
     toast({
@@ -37,17 +35,22 @@ export const Contact = () => {
       description: "We'll get back to you within 24 hours. Thank you for choosing Chokho Safar Travels!",
     });
 
-    // Reset form
     setFormData({
       name: '',
-      email: '',
-      phone: '',
+      email: '',      phone: '',
       destination: '',
       message: ''
     });
   };
 
   const handleWhatsApp = () => {
+    // Google Ads Conversion Tracker for WhatsApp
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18193428068/zMyvCO6i48EcEOTcpuND'
+      });
+    }
+
     const message = `Hi! I'm interested in booking a tour with Chokho Safar Travels.`;
     const whatsappUrl = `https://wa.me/918114467319?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -56,7 +59,6 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-amber-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-amber-100 text-amber-700 hover:bg-amber-200 px-4 py-1">
             Get In Touch
@@ -70,7 +72,6 @@ export const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Information */}
           <div className="space-y-8">
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-6">
@@ -81,7 +82,6 @@ export const Contact = () => {
               </p>
             </div>
 
-            {/* Contact Cards */}
             <div className="space-y-4">
               <Card className="border-0 bg-white shadow-md hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
@@ -91,12 +91,22 @@ export const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-2">Call Us</h4>
-                      <a href={`tel:${companyInfo.phone[0]}`} className="text-amber-600 hover:text-amber-700 font-medium block">
+                      
+                      {/* SINGLE ENTRY WITH GOOGLE ADS TRACKER */}
+                      <a 
+                        href={`tel:${companyInfo.phone[0]}`} 
+                        className="text-amber-600 hover:text-amber-700 font-medium block"
+                        onClick={() => {
+                          if (window.gtag) {
+                            window.gtag('event', 'conversion', {
+                              'send_to': 'AW-18193428068/zMyvCO6i48EcEOTcpuND'
+                            });
+                          }
+                        }}
+                      >
                         {companyInfo.phone[0]}
                       </a>
-                      <a href={`tel:${companyInfo.phone[1]}`} className="text-amber-600 hover:text-amber-700 font-medium block">
-                        {companyInfo.phone[1]}
-                      </a>
+
                     </div>
                   </div>
                 </CardContent>
@@ -148,7 +158,6 @@ export const Contact = () => {
               </Card>
             </div>
 
-            {/* Quick WhatsApp */}
             <Button 
               onClick={handleWhatsApp}
               className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-lg"
@@ -158,7 +167,6 @@ export const Contact = () => {
             </Button>
           </div>
 
-          {/* Contact Form */}
           <Card className="border-0 bg-white shadow-xl">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
@@ -167,75 +175,25 @@ export const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Label htmlFor="name">Full Name *</Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Enter your name"
-                    required
-                    className="mt-2"
-                  />
+                  <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Enter your name" required className="mt-2" />
                 </div>
-
                 <div>
                   <Label htmlFor="email">Email Address *</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="your.email@example.com"
-                    required
-                    className="mt-2"
-                  />
+                  <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="your.email@example.com" required className="mt-2" />
                 </div>
-
                 <div>
                   <Label htmlFor="phone">Phone Number *</Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="+91 XXXXXXXXXX"
-                    required
-                    className="mt-2"
-                  />
+                  <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} placeholder="+91 XXXXXXXXXX" required className="mt-2" />
                 </div>
-
                 <div>
                   <Label htmlFor="destination">Interested Destination</Label>
-                  <Input
-                    id="destination"
-                    name="destination"
-                    value={formData.destination}
-                    onChange={handleChange}
-                    placeholder="e.g., Golden Triangle, Rajasthan Heritage"
-                    className="mt-2"
-                  />
+                  <Input id="destination" name="destination" value={formData.destination} onChange={handleChange} placeholder="e.g., Golden Triangle, Rajasthan Heritage" className="mt-2" />
                 </div>
-
                 <div>
                   <Label htmlFor="message">Your Message *</Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Tell us about your travel plans, preferred dates, number of travelers, etc."
-                    required
-                    rows={4}
-                    className="mt-2"
-                  />
+                  <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Tell us about your travel plans..." required rows={4} className="mt-2" />
                 </div>
-
-                <Button 
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-amber-600 to-orange-500 hover:from-amber-700 hover:to-orange-600 text-white py-6 text-lg"
-                >
+                <Button type="submit" className="w-full bg-gradient-to-r from-amber-600 to-orange-500 hover:from-amber-700 hover:to-orange-600 text-white py-6 text-lg">
                   <Send size={20} className="mr-2" />
                   Send Inquiry
                 </Button>

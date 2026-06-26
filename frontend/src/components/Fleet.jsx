@@ -7,6 +7,13 @@ import { Users, Phone } from 'lucide-react';
 
 export const Fleet = () => {
   const handleCall = () => {
+    // Triggers Google Ads Conversion Tracking before dialing
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-18193428068/zMyvCO6i48EcEOTcpuND'
+      });
+    }
+
     window.location.href = 'tel:+918114467319';
   };
 

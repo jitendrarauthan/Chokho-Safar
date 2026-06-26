@@ -158,6 +158,13 @@ export const Hero = () => {
           target="_blank"
           rel="noopener noreferrer"
           className="group"
+          onClick={() => {
+            if (window.gtag) {
+              window.gtag('event', 'conversion', {
+                'send_to': 'AW-18193428068/zMyvCO6i48EcEOTcpuND'
+              });
+            }
+          }}
         >
           <div className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
             <MessageCircle className="text-white" size={28} />
@@ -169,6 +176,13 @@ export const Hero = () => {
         <a
           href="tel:+918114467319"
           className="group"
+          onClick={() => {
+            if (window.gtag) {
+              window.gtag('event', 'conversion', {
+                'send_to': 'AW-18193428068/zMyvCO6i48EcEOTcpuND'
+              });
+            }
+          }}
         >
           <div className="w-14 h-14 bg-amber-500 hover:bg-amber-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 cursor-pointer">
             <Phone className="text-white" size={28} />
