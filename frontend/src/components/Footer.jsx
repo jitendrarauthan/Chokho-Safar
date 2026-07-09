@@ -138,7 +138,7 @@ export const Footer = () => {
                 <Phone size={18} className="text-amber-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-400 text-sm">
                   <a href={`tel:${companyInfo.phone[0]}`} className="hover:text-amber-400 transition-colors block">
-                    {companyInfo.phone[0]}
+                    {companyInfo.owner}:{companyInfo.phone[0]}
                   </a>
                   <a href={`tel:${companyInfo.phone[1]}`} className="hover:text-amber-400 transition-colors block">
                     {companyInfo.phone[1]}
