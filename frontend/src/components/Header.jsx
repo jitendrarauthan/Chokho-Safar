@@ -34,7 +34,7 @@ export const Header = () => {
           <div className="flex items-center gap-4 flex-wrap">
             <a href={`tel:${companyInfo.phone[0]}`} className="flex items-center gap-1 hover:text-amber-100 transition-colors">
               <Phone size={14} />
-              <span className="hidden sm:inline">{companyInfo.phone[0]}</span>
+              <span className="hidden sm:inline">{companyInfo.owner}:{companyInfo.phone[0]}</span>
             </a>
             <a href={`mailto:${companyInfo.email}`} className="flex items-center gap-1 hover:text-amber-100 transition-colors">
               <Mail size={14} />
