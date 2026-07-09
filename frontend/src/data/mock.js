@@ -2,6 +2,7 @@
 
 export const companyInfo = {
   name: "Chokho Safar Travels",
+  owner: "Ramkishan Gurjar",
   nameHindi: "चोखो सफ़र ट्रेवल्स",
   tagline: "Taking You to the Heart of Rajasthan",
   established: "2014",
