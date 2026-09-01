@@ -163,6 +163,14 @@ export const Footer = () => {
             <p className="text-sm text-gray-400 text-center md:text-left">
               © {currentYear} {companyInfo.name}. All rights reserved.
             </p>
+            {/* Visible Visitor Counter Badge */}
+<div className="flex items-center justify-center gap-2 mt-6 pt-6 border-t border-gray-800 text-gray-400 text-sm">
+  <span>Total Visitors:</span>
+  <img 
+    src="https://api.visitorbadge.io/api/combined?path=chokhosafar.com&label=Visits&countColor=%23d97706&style=flat" 
+    alt="Visitor Counter" 
+  />
+</div>
             <div className="flex gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-amber-400 transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-amber-400 transition-colors">Terms & Conditions</a>
