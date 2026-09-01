@@ -163,7 +163,6 @@ export const Footer = () => {
             <p className="text-sm text-gray-400 text-center md:text-left">
               © {currentYear} {companyInfo.name}. All rights reserved.
             </p>
-            {/* Visible Visitor Counter Badge */}
 <div className="flex items-center justify-center gap-2 mt-6 pt-6 border-t border-gray-800 text-gray-400 text-sm">
   <span>Total Visitors:</span>
   <img 
