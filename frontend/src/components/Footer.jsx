@@ -171,13 +171,7 @@ export const Footer = () => {
     alt="Visitor Counter" 
   />
 </div>
-            {/* Inside Footer.jsx */}
-<div className="mt-6 flex justify-center">
-  {/* Example ClustrMaps visual globe tracker */}
-  <a href="https://clustrmaps.com/site/YOUR_ID" title="Visit tracker">
-    <img src="//www.clustrmaps.com/map_v2.png?d=YOUR_ID&cl=ffffff" alt="Live Visitor Map" />
-  </a>
-</div>
+
             <div className="flex gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-amber-400 transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-amber-400 transition-colors">Terms & Conditions</a>
